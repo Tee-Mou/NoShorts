@@ -1,5 +1,5 @@
 {
-    "manifest_version": 1,
+    "manifest_version": 2,
     "name": "NoShorts",
     "version": "1.0",
 
@@ -12,7 +12,7 @@
 
     "content_scripts": [
         {
-            "matches": ["*://*.youtube.com/shorts/*"],
+            "matches": ["*://*.youtube.com/*"],
             "js": ["noshorts.js"]
         }
     ]
