@@ -1,0 +1,19 @@
+{
+    "manifest_version": 1,
+    "name": "NoShorts",
+    "version": "1.0",
+
+    "description": "Firefox extension which blocks YouTube Shorts.",
+
+    "icons": {
+        "96": "icons/icon-96.jpg",
+        "48": "icons/icon-48.jpg"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/shorts/*"],
+            "js": ["noshorts.js"]
+        }
+    ]
+}
