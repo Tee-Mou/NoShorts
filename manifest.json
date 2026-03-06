@@ -3,11 +3,11 @@
     "name": "NoShorts",
     "version": "1.0",
 
-    "description": "Firefox extension which blocks YouTube Shorts.",
+    "description": "Closes the tab when you try to access YouTube Shorts.",
 
     "icons": {
-        "96": "icons/icon-96.jpg",
-        "48": "icons/icon-48.jpg"
+        "96": "./icons/icon-96.png",
+        "48": "./icons/icon-48.png"
     },
 
     "content_scripts": [
@@ -15,5 +15,14 @@
             "matches": ["*://*.youtube.com/*"],
             "js": ["noshorts.js"]
         }
-    ]
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "noshorts@tmo",
+            "data_collection_permissions": {
+                "required": ["none"]
+    }
+  }
+}
 }
